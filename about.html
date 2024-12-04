@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>О Микрозелени</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleSubmit(event) {
+            const name = document.getElementById('name').value;
+            const preference = document.querySelector('input[name="preference"]:checked').value;
+            const herbs = document.getElementById('herbs').value;
+            const message = `Ваше имя: ${name}\nВаши предпочтения: ${preference}\nВаши любимые травы: ${herbs}`;
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <a href="index.html">
+        <img src="gip.png" width="100" height="100" alt="Логотип" />
+    </a>
+
+    <h1>О Микрозелени!</h1>
+    <hr class="hr-horizontal-gradient">
+    
+    <div class="content">
+        <img src="Микрозелень.jpg" class="left" width="300" height="450" alt="Изображение микрозелени" />
+        <div>
+            <h2>Что же такое эта микрозелень?</h2>
+            <p>
+                Микрозелень — это, по сути, молодая съедобная зелень овощей. Также это молодая съедобная зелень цветов и даже деревьев.
+            </p>
+            <p>
+                Эти молодые растения имеют концентрированные питательные вещества, а это означает, что они обычно содержат больше витаминов, антиоксидантов и минералов, чем более зрелые традиционные овощи или пряная зелень. 
+                Концентрация питательных веществ в микрозелени может быть в разы – до девяти раз – выше, чем в традиционных зрелых овощах.
+            </p>
+        </div>
+    </div>
+
+    <h3>Форма обратной связи:</h3>
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Ваши предпочтения:</label><br>
+        <input type="radio" id="option1" name="preference" value="вегетарианец" required>
+        <label for="option1">Вегетарианец</label><br>
+        <input type="radio" id="option2" name="preference" value="веган" required>
+        <label for="option2">Веган</label><br><br>
+
+        <label for="herbs">Выберите ваши любимые травы:</label>
+        <select id="herbs" name="herbs" required>
+            <option value="">--Выберите--</option> 
+            <option value="петрушка">Петрушка</option>
+            <option value="базилик">Базилик</option>
+            <option value="красный лук">Красный лук</option>
+        </select><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <a href="Полезные свойства микрозелени.docx">Полезные свойства микрозелени</a><br>
+</body>
+</html>

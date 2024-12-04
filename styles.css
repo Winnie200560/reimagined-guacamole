@@ -1,0 +1,76 @@
+body {
+    
+    background: linear-gradient(to top, #90ee90, #FFFFFF);
+    font-family: 'Times New Roman', Times, serif;
+    color: #013220;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: green;
+    font-size: 2.5em
+}
+
+p {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 2.0em;
+    color: green;
+    text-align: left;
+    text-indent: 30px;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #013220;
+    font-size: 40px;
+    margin: 0 15px;
+}
+ol{
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: green;
+    text-align: left;
+    text-indent: 30px;
+    margin: 20px 0;
+}
+ul{
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: green;
+    text-align: left;
+    text-indent: 30px;
+    margin: 20px 0;
+}
+form{
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: green;
+    text-align: left;
+    text-indent: 30px;
+    margin: 20px 0;
+
+}
+
+
+.hr-horizontal-gradient {
+    margin: 20px 0;
+    padding: 0;
+    height: 6px;
+    border: none;
+    background: linear-gradient(45deg, #287233, #71bc78);
+}
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+    margin-bottom: 20px; /* Отступ снизу для разделения контента */
+}
+
+.content img {
+    margin-right: 20px; /* Отступ между изображением и текстом */
+}
